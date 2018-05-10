@@ -92,7 +92,7 @@ public class Main {
             bw.write(String.format("%15s, %30s, %30s, %15s","BookId","Book Name", "Author", "Price"));
             bw.newLine();
             for (Book book : listBook) {
-                bw.write(String.format("%15s, %30s, %50s, %15s", book.getBookId(), book.getBookName(),
+                bw.write(String.format("%15s, %30s,%30s, %15s", book.getBookId(), book.getBookName(),
                         book.getAuthor(),"$"+ String.valueOf(book.getPrice())));
                 bw.newLine();
             }
